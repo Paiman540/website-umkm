@@ -10,15 +10,16 @@ form.addEventListener("submit", function (event) {
   const formData = new FormData(form);
   const data = Object.fromEntries(formData.entries());
 
-  preview.textContent =
-    "Preview data formulir:\n\n" +
-    "Nama: " + data.nama + "\n" +
-    "Email: " + data.email + "\n" +
-    "Telepon: " + (data.telepon || "Tidak diisi") + "\n" +
-    "Paket: " + data.paket + "\n" +
-    "Topik: " + data.topik + "\n" +
-    "Pesan: " + data.pesan;
-});
+ 
+preview.textContent = [
+  `Nama: ${data.get("nama")}`,
+  `Email: ${data.get("email")}`,
+  `Paket: ${data.get("paket")}`,
+  `Waktu dihubungi: ${data.get("waktu") || "Belum dipilih"}`,
+  `Topik: ${data.get("topik")}`,
+  `Pesan: ${data.get("pesan")}`,
+].join("\n");
+
 
 form.addEventListener("reset", function () {
   preview.textContent = "Data form akan muncul di sini setelah formulir valid dikirim.";
