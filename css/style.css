@@ -149,3 +149,72 @@ table { width: 100%; border-collapse: collapse; }
 caption { margin-bottom: 8px; font-weight: 700; text-align: left; }
 th,
 td { padding: 10px; text-align: left; border: 1px solid #dccbbc; }
+
+/* P04 - Contact Form */
+
+#form-kontak {
+  max-width: 650px;
+  margin: 24px 0;
+}
+
+#form-kontak .field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 18px;
+}
+
+#form-kontak input:not([type="radio"]),
+#form-kontak select,
+#form-kontak textarea {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #a89585;
+  border-radius: 6px;
+  font: inherit;
+}
+
+#form-kontak fieldset {
+  margin: 0 0 18px;
+  padding: 14px;
+  border: 1px solid #a89585;
+  border-radius: 6px;
+}
+
+#form-kontak fieldset label {
+  display: block;
+  margin: 10px 0;
+}
+
+#form-kontak input:focus,
+#form-kontak select:focus,
+#form-kontak textarea:focus,
+#form-kontak button:focus-visible {
+  outline: 3px solid #2563eb;
+  outline-offset: 3px;
+}
+
+#form-kontak button {
+  padding: 10px 16px;
+  margin: 4px 8px 4px 0;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font: inherit;
+}
+
+#form-kontak .secondary-button {
+  background: #e8ddd2;
+  color: #2f2118;
+}
+
+#preview {
+  max-width: 100%;
+  padding: 16px;
+  overflow-wrap: anywhere;
+  white-space: pre-wrap;
+  background: #f1e3d3;
+  border-radius: 6px;
+}
+
