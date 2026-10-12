@@ -1,75 +1,188 @@
+```html
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
-    <head>
-        <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Kopi Nusa - Website UMKM</title>
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
-    </head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta
+    name="description"
+    content="Kopi Nusa, pilihan kopi lokal untuk menemani belajar, bekerja, dan menikmati waktu santai di Pekalongan."
+  >
+  <meta name="theme-color" content="#245c4f">
+
+  <title>Kopi Nusa | Kopi Lokal Pilihan Pekalongan</title>
+
+  <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
+  <a class="skip-link" href="#konten">Lewati ke konten utama</a>
 
   <header class="site-header">
     <nav class="nav" aria-label="Navigasi utama">
-      <a class="brand" href="index.html">Kopi Nusa</a>
+      <a class="brand" href="index.html" aria-label="Kopi Nusa, Beranda">
+        Kopi Nusa
+      </a>
+
       <ul>
-  <li><a aria-current="page" href="index.html">Beranda</a></li>
-  <li><a href="tentang.html">Tentang Kami</a></li>
-  <li><a href="produk.html">Produk</a></li>
-  <li><a href="galeri.html">Galeri</a></li>
-  <li><a href="kontak.html">Kontak</a></li>
+        <li><a aria-current="page" href="index.html">Beranda</a></li>
+        <li><a href="tentang.html">Tentang Kami</a></li>
+        <li><a href="produk.html">Produk</a></li>
+        <li><a href="galeri.html">Galeri</a></li>
+        <li><a href="kontak.html">Kontak</a></li>
       </ul>
     </nav>
   </header>
 
   <main id="konten" class="page">
 
-      <section class="hero" aria-labelledby="hero-title">
-  <p class="eyebrow">UMKM Pekalongan</p>
-  <h1 id="hero-title">Kopi Nusa</h1>
-  <p>Kopi lokal pilihan untuk teman belajar, bekerja, dan berdiskusi.</p>
-  <button id="promoButton" type="button">Lihat promo hari ini</button>
-  <img src="assets/images/etalase-kopi.svg" alt="Etalase Kopi Nusa berisi kemasan kopi lokal" />
-      </section>
+    <!-- Hero section -->
+    <section class="hero" aria-labelledby="hero-title">
+      <p class="eyebrow">UMKM Lokal • Pekalongan</p>
 
-      <section aria-labelledby="produk-title">
-        <h2 id="produk-title">Produk Unggulan</h2>
-        <div class="product-list">
-  <article class="product-card">
-    <h3>Kopi Tubruk Signature</h3>
-    <p>Rasa klasik dengan aroma kuat untuk teman memulai hari.</p>
-    <p class="price">Rp18.000</p>
-  </article>
-  <article class="product-card">
-    <h3>Cold Brew Aren</h3>
-    <p>Minuman kopi dingin dengan manis aren yang seimbang.</p>
-    <p class="price">Rp22.000</p>
-  </article>
-  </div>
-  <section id="kontak" class="contact" aria-labelledby="kontak-title">
-  <p class="eyebrow">Kontak</p>
-  <h2 id="kontak-title">Hubungi Kopi Nusa</h2>
-  <p>Silakan hubungi kami untuk informasi produk dan pemesanan.</p>
+      <h1 id="hero-title">Temukan Cerita di Setiap Cangkir</h1>
 
-  <p>
-    Email:
-    <a href="mailto:info@kopinusa.example">info@kopinusa.example</a>
-  </p>
+      <p>
+        Selamat datang di Kopi Nusa. Nikmati pilihan kopi dengan cita rasa
+        khas yang cocok menemani waktu belajar, bekerja, dan bersantai.
+      </p>
 
-  <p>
-    Telepon:
-    <a href="tel:+6281234567890">0812-3456-7890</a>
-  </p>
-</section>
-      </section>
-    </main>
-    <footer class="site-footer">
-  <p>&copy; 2026 Kopi Nusa. Data pada halaman ini bersifat dummy.</p>
-</footer>
-<script src="js/script.js"></script>
-    <script src="js/script.js"></script>
-    
+      <p>
+        <a class="button" href="produk.html">Jelajahi Produk</a>
+        <a class="button secondary-button" href="tentang.html">
+          Kenali Kopi Nusa
+        </a>
+      </p>
+
+      <img
+        src="assets/images/etalase-kopi.svg"
+        alt="Etalase Kopi Nusa yang menampilkan kemasan kopi lokal"
+        width="640"
+        height="400"
+        fetchpriority="high"
+      >
+    </section>
+
+    <!-- Brand highlights -->
+    <section aria-labelledby="keunggulan-title">
+      <h2 id="keunggulan-title">Mengapa Memilih Kopi Nusa?</h2>
+
+      <div class="product-list">
+        <article class="product-card">
+          <h3>Cita Rasa Pilihan</h3>
+          <p>
+            Pilihan kopi untuk menemani aktivitas dan momen santai Anda.
+          </p>
+        </article>
+
+        <article class="product-card">
+          <h3>Praktis dan Nyaman</h3>
+          <p>
+            Temukan pilihan kopi yang sesuai dengan rutinitas harian Anda.
+          </p>
+        </article>
+
+        <article class="product-card">
+          <h3>UMKM Pekalongan</h3>
+          <p>
+            Kenali usaha lokal dan jelajahi produk yang ditawarkan Kopi Nusa.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Featured products -->
+    <section aria-labelledby="produk-title">
+      <p class="eyebrow">Pilihan Favorit</p>
+      <h2 id="produk-title">Produk Unggulan</h2>
+
+      <p>
+        Jelajahi pilihan kopi untuk menemani berbagai aktivitas Anda.
+      </p>
+
+      <div class="product-list">
+        <article class="product-card">
+          <h3>Kopi Tubruk Signature</h3>
+          <p>
+            Rasa klasik dengan aroma kuat untuk menemani awal hari.
+          </p>
+          <p class="price">Rp18.000</p>
+          <p>
+            <a href="produk.html">Lihat detail produk</a>
+          </p>
+        </article>
+
+        <article class="product-card">
+          <h3>Cold Brew Aren</h3>
+          <p>
+            Minuman kopi dingin dengan sentuhan manis aren yang seimbang.
+          </p>
+          <p class="price">Rp22.000</p>
+          <p>
+            <a href="produk.html">Lihat detail produk</a>
+          </p>
+        </article>
+      </div>
+
+      <p>
+        <a href="produk.html">Lihat semua produk Kopi Nusa &rarr;</a>
+      </p>
+    </section>
+
+    <!-- Business introduction -->
+    <section aria-labelledby="tentang-title">
+      <p class="eyebrow">Cerita Kami</p>
+      <h2 id="tentang-title">Lebih Dekat dengan Kopi Nusa</h2>
+
+      <p>
+        Kopi Nusa merupakan konsep usaha kopi lokal yang menghadirkan
+        pilihan minuman dan produk kopi untuk kebutuhan sehari-hari.
+        Kami ingin membuat pengalaman menikmati kopi terasa sederhana,
+        nyaman, dan mudah dijangkau.
+      </p>
+
+      <p>
+        <a href="tentang.html">Pelajari lebih lanjut tentang kami</a>
+      </p>
+    </section>
+
+    <!-- Contact call-to-action -->
+    <section class="contact" aria-labelledby="kontak-title">
+      <p class="eyebrow">Kami Siap Membantu</p>
+      <h2 id="kontak-title">Tertarik dengan Produk Kami?</h2>
+
+      <p>
+        Hubungi Kopi Nusa untuk bertanya tentang produk, harga,
+        dan informasi pemesanan.
+      </p>
+
+      <p>
+        <a class="button" href="kontak.html">Hubungi Kami</a>
+      </p>
+
+      <p>
+        Email:
+        <a href="mailto:info@kopinusa.example">
+          info@kopinusa.example
+        </a>
+      </p>
+
+      <p>
+        Telepon:
+        <a href="tel:+6281234567890">0812-3456-7890</a>
+      </p>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 Kopi Nusa. Hak cipta dilindungi.</p>
+    <p>Proyek website UMKM untuk tujuan pembelajaran.</p>
+    <p><a href="kontak.html">Kontak</a> | <a href="produk.html">Produk</a></p>
+  </footer>
+
+  <script src="js/script.js"></script>
 </body>
 </html>
+```
