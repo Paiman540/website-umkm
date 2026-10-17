@@ -9,7 +9,7 @@
     content="Jelajahi galeri Kopi Nusa, proses penyeduhan, dan pilihan produk kopi lokal berkualitas."
   />
   <meta name="theme-color" content="#245c4f" />
-  <title>Galeri dan Katalog | Kopi Nusa</title>
+  <title>Galeri | Kopi Nusa</title>
   <link rel="stylesheet" href="css/style.css" />
 </head>
 
@@ -30,32 +30,42 @@
     </nav>
   </header>
 
-  <main class="page" id="konten">
-    <section class="hero" aria-labelledby="page-title">
-      <p class="eyebrow">Cerita di Balik Setiap Cangkir</p>
-      <h1 id="page-title">Galeri Kopi Nusa</h1>
+  <main class="page gallery-page" id="konten">
+
+    <!-- Gallery introduction -->
+    <section class="gallery-hero" aria-labelledby="page-title">
+      <p class="gallery-eyebrow">GALERI KOPI NUSA</p>
+
+      <h1 id="page-title">Keindahan di Setiap Proses</h1>
+
       <p>
-        Kenali produk, bahan pilihan, dan proses penyeduhan
-        yang menghadirkan pengalaman kopi yang istimewa.
+        Dari kebun hingga cangkir, setiap langkah adalah cerita
+        tentang kerja keras, alam, dan cinta pada kopi.
       </p>
+
       <a class="button" href="produk.html">Jelajahi Produk</a>
     </section>
 
-    <section aria-labelledby="media-title">
-      <h2 id="media-title">Cerita Visual Kami</h2>
-      <p>
-        Dari pilihan biji kopi hingga proses penyeduhan,
-        setiap detail menjadi bagian dari pengalaman Kopi Nusa.
-      </p>
+    <!-- Photo gallery -->
+    <section class="gallery-section" aria-labelledby="media-title">
+      <div class="section-heading">
+        <p class="section-eyebrow">CERITA VISUAL KAMI</p>
+        <h2 id="media-title">Di Balik Setiap Cangkir</h2>
+        <p>
+          Kenali produk dan proses penyeduhan yang menghadirkan
+          pengalaman kopi yang istimewa.
+        </p>
+      </div>
 
-      <div class="gallery-grid"></div>
-        <figure class="media-card">
+      <div class="gallery-grid">
+
+        <figure class="media-card gallery-card">
           <img
             src="assets/images/etalase-kopi.svg"
-            alt="Etalase Kopi Nusa menampilkan kemasan kopi lokal"
-            loading="lazy"
             width="640"
-            height="420"
+            height="360"
+            loading="lazy"
+            alt="Etalase produk kopi lokal Kopi Nusa"
           />
           <figcaption>
             <strong>Produk Pilihan</strong>
@@ -66,13 +76,13 @@
           </figcaption>
         </figure>
 
-        <figure class="media-card">
+        <figure class="media-card gallery-card">
           <img
             src="assets/images/proses-seduh.svg"
-            alt="Barista menyeduh kopi menggunakan metode manual"
-            loading="lazy"
             width="640"
-            height="420"
+            height="360"
+            loading="lazy"
+            alt="Proses menyeduh kopi menggunakan metode manual"
           />
           <figcaption>
             <strong>Proses Penyeduhan</strong>
@@ -83,13 +93,13 @@
           </figcaption>
         </figure>
 
-        <figure class="media-card">
+        <figure class="media-card gallery-card">
           <img
             src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=800&q=80"
-            alt="Secangkir kopi hitam disajikan di atas meja"
-            loading="lazy"
             width="800"
             height="600"
+            loading="lazy"
+            alt="Secangkir kopi yang disajikan di atas meja"
           />
           <figcaption>
             <strong>Sajian Kopi</strong>
@@ -99,75 +109,101 @@
             </p>
           </figcaption>
         </figure>
+
       </div>
     </section>
 
-    <section aria-labelledby="package-title">
-      <h2 id="package-title">Pilihan Paket</h2>
-      <p>
-        Temukan pilihan paket yang sesuai dengan kebutuhan Anda.
-      </p>
+    <!-- Coffee packages -->
+    <section class="gallery-packages" aria-labelledby="package-title">
+      <div class="section-heading">
+        <p class="section-eyebrow">PILIHAN KAMI</p>
+        <h2 id="package-title">Temukan Paket Favoritmu</h2>
+        <p>
+          Temukan pilihan paket yang sesuai dengan kebutuhan Anda.
+        </p>
+      </div>
 
-      <ul>
+      <ul class="package-list">
         <li>
           <strong>Paket Seduh Rumahan</strong>
-          — untuk menikmati kopi di rumah.
+          <span>Untuk menikmati kopi di rumah.</span>
         </li>
         <li>
           <strong>Paket Kantor Mingguan</strong>
-          — pilihan untuk menemani aktivitas kerja.
+          <span>Pilihan untuk menemani aktivitas kerja.</span>
         </li>
         <li>
           <strong>Paket Tester</strong>
-          — untuk mengenal pilihan produk Kopi Nusa.
+          <span>Untuk mengenal pilihan produk Kopi Nusa.</span>
         </li>
       </ul>
 
       <a class="button" href="produk.html">Lihat Semua Produk</a>
     </section>
 
-    <section aria-labelledby="price-title">
-      <h2 id="price-title">Daftar Harga</h2>
-      <p>
-        Berikut contoh pilihan produk dan harga Kopi Nusa.
-        Silakan hubungi kami untuk konfirmasi ketersediaan.
-      </p>
+    <!-- Accessible, responsive price table -->
+    <section class="gallery-prices" aria-labelledby="price-title">
+      <div class="section-heading">
+        <p class="section-eyebrow">INFORMASI PRODUK</p>
+        <h2 id="price-title">Daftar Harga</h2>
+        <p>
+          Berikut contoh pilihan produk dan harga Kopi Nusa.
+          Silakan hubungi kami untuk konfirmasi ketersediaan.
+        </p>
+      </div>
 
-      <table>
-        <caption>Daftar harga produk Kopi Nusa</caption>
-        <thead>
-          <tr>
-            <th scope="col">Produk</th>
-            <th scope="col">Ukuran</th>
-            <th scope="col">Harga</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th scope="row">Kopi Tubruk Signature</th>
-            <td>250 gram</td>
-            <td>Rp45.000</td>
-          </tr>
-          <tr>
-            <th scope="row">Cold Brew Aren</th>
-            <td>Botol 250 ml</td>
-            <td>Rp22.000</td>
-          </tr>
-        </tbody>
-      </table>
+      <div
+        class="table-scroll"
+        role="region"
+        aria-labelledby="daftar-harga-caption"
+        tabindex="0"
+      >
+        <table>
+          <caption id="daftar-harga-caption">
+            Daftar harga produk Kopi Nusa
+          </caption>
+          <thead>
+            <tr>
+              <th scope="col">Produk</th>
+              <th scope="col">Ukuran</th>
+              <th scope="col">Harga</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Kopi Tubruk Signature</th>
+              <td>250 gram</td>
+              <td>Rp45.000</td>
+            </tr>
+            <tr>
+              <th scope="row">Cold Brew Aren</th>
+              <td>Botol 250 ml</td>
+              <td>Rp22.000</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
       <p>
-        <small>Harga di atas merupakan data contoh untuk keperluan proyek.</small>
+        <small>
+          Harga di atas merupakan data contoh untuk keperluan proyek.
+        </small>
       </p>
     </section>
 
-    <section aria-labelledby="contact-title">
-      <h2 id="contact-title">Tertarik dengan Produk Kami?</h2>
+    <!-- Contact call to action -->
+    <section class="coffee-cta" aria-labelledby="contact-title">
+      <p class="section-eyebrow">SECANGKIR KEHANGATAN</p>
+      <h2 id="contact-title">Mari Temukan Kopi Favoritmu</h2>
       <p>
-        Kunjungi halaman kontak untuk melihat informasi
-        pemesanan atau mengirim pertanyaan kepada Kopi Nusa.
+        Kunjungi halaman kontak untuk melihat informasi pemesanan
+        atau mengirim pertanyaan kepada Kopi Nusa.
       </p>
-      <a class="button" href="kontak.html">Hubungi Kopi Nusa</a>
+      <a class="coffee-cta-button" href="kontak.html">
+        Hubungi Kopi Nusa
+      </a>
     </section>
+
   </main>
 
   <footer class="site-footer">
