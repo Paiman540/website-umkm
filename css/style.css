@@ -1000,3 +1000,54 @@ img {
   height: auto;
   display: block;
 }
+
+/* ===================================
+   P09 - JAVASCRIPT PRODUCT SECTION
+=================================== */
+
+.js-product-grid {
+    display: grid;
+    grid-template-columns: repeat(
+        auto-fit,
+        minmax(14rem, 1fr)
+    );
+    gap: var(--space-4, 1rem);
+}
+
+.js-product-card {
+    padding: var(--space-4, 1rem);
+    border: 1px solid var(--color-border, #d9e2dd);
+    border-radius: var(--radius-lg, 12px);
+    background: var(--color-surface, #ffffff);
+}
+
+.js-product-card h3 {
+    margin-bottom: 0.5rem;
+}
+
+.js-product-card .price {
+    font-weight: 700;
+    color: var(--color-primary, #245c4f);
+    font-size: 1.1rem;
+}
+
+.stock-badge {
+    display: inline-flex;
+    margin-block-start: var(--space-2, 0.5rem);
+    padding: 0.25rem 0.6rem;
+    border-radius: 999px;
+    font-size: 0.85rem;
+    font-weight: 700;
+    background: #dcfce7;
+    color: #166534;
+}
+
+.stock-badge.warning {
+    background: #fef3c7;
+    color: #92400e;
+}
+
+.stock-badge.empty {
+    background: #fee2e2;
+    color: #991b1b;
+}
