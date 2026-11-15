@@ -1099,4 +1099,77 @@ img {
 .js-product-card .price {
     font-weight: bold;
     color: #245c4f;
+
+/* ========================================
+   P11 - DOM EVENTS AND PRODUCT FILTER
+======================================== */
+
+/* Category filter container */
+.filter-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-block: 1rem 1.5rem;
+}
+
+/* Filter buttons */
+.filter-button {
+  border: 1px solid var(--color-border);
+  border-radius: 999px;
+  background: #ffffff;
+  color: var(--color-text);
+  padding: 0.65rem 1rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+/* Hover and keyboard focus */
+.filter-button:hover,
+.filter-button:focus-visible {
+  border-color: var(--color-primary);
+  outline: 3px solid rgb(36 92 79 / 20%);
+  outline-offset: 2px;
+}
+
+/* Active filter button */
+.filter-button.is-active {
+  background: var(--color-primary);
+  border-color: var(--color-primary);
+  color: #ffffff;
+}
+
+/* Empty state message */
+.empty-state {
+  grid-column: 1 / -1;
+  border: 1px dashed #94a3b8;
+  border-radius: 1rem;
+  padding: 1rem;
+  background: #ffffff;
+  color: #64748b;
+}
+
+/* Product status */
+.produk-status {
+  color: var(--color-muted);
+  font-weight: 600;
+}
+
+/* Temporary hide button */
+.ghost-button {
+  margin-top: 0.75rem;
+  padding: 0.5rem 1rem;
+  color: var(--color-primary);
+  background: #ffffff;
+  border: 1px solid var(--color-primary);
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+}
+
+.ghost-button:hover {
+  color: #ffffff;
+  background: var(--color-primary-strong);
+  border-color: var(--color-primary-strong);
+}
+
+
 }

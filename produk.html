@@ -1,5 +1,7 @@
+
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,6 +15,7 @@
 
   <link rel="stylesheet" href="css/style.css">
 
+  <!-- P10 + P11 JavaScript -->
   <script src="js/app.js" defer></script>
 </head>
 
@@ -26,6 +29,7 @@
   <!-- Header -->
   <header class="site-header">
     <div class="container">
+
       <a href="index.html" class="site-logo">
         Kopi Nusa
       </a>
@@ -35,11 +39,15 @@
           <li>
             <a href="index.html">Beranda</a>
           </li>
+
           <li>
-            <a href="produk.html" aria-current="page">Produk</a>
+            <a href="produk.html" aria-current="page">
+              Produk
+            </a>
           </li>
         </ul>
       </nav>
+
     </div>
   </header>
 
@@ -48,8 +56,12 @@
 
     <!-- Page Introduction -->
     <section class="section">
+
       <div class="section-header">
-        <p class="eyebrow">Kopi Nusantara</p>
+
+        <p class="eyebrow">
+          Kopi Nusantara
+        </p>
 
         <h1>Produk Kopi Nusa</h1>
 
@@ -57,95 +69,171 @@
           Temukan berbagai pilihan kopi Nusantara dengan cita rasa
           khas dari berbagai daerah di Indonesia.
         </p>
+
       </div>
+
     </section>
 
-    <!-- Product Information -->
-    <section class="section" aria-labelledby="tentang-produk">
-      <div class="section-header">
-        <p class="eyebrow">Pilihan Kami</p>
-
-        <h2 id="tentang-produk">Pilihan Produk Kopi</h2>
-
-        <p>
-          Kami menyediakan berbagai produk kopi dan paket seduh
-          untuk menemani aktivitas sehari-hari.
-        </p>
-      </div>
-
-      <div class="product-grid">
-
-        <article class="product-card">
-          <h3>Arabika Gayo</h3>
-
-          <p>
-            Kopi Arabika dengan karakter rasa khas dari Gayo.
-          </p>
-        </article>
-
-        <article class="product-card">
-          <h3>Robusta Temanggung</h3>
-
-          <p>
-            Kopi Robusta dengan cita rasa kuat dan aroma khas.
-          </p>
-        </article>
-
-        <article class="product-card">
-          <h3>Paket Seduh</h3>
-
-          <p>
-            Paket praktis untuk menikmati kopi di rumah.
-          </p>
-        </article>
-
-      </div>
-    </section>
-
-    <!-- Dynamic Products: P10 -->
+    <!-- Static Product Information -->
     <section
       class="section"
-      aria-labelledby="produk-dinamis-title"
+      aria-labelledby="tentang-produk"
     >
 
       <div class="section-header">
 
         <p class="eyebrow">
-          P10 - Function dan Array Methods
+          Pilihan Kami
         </p>
 
-       <h2 id="produk-dinamis-title">
-        Katalog Produk Kopi Nusa
-       </h2>
+        <h2 id="tentang-produk">
+          Pilihan Produk Kopi
+        </h2>
 
-        <p id="produk-ringkasan">
-          Data produk akan dimuat melalui JavaScript.
-        </p>
-
-        <p id="produk-unggulan">
-          Produk unggulan akan ditentukan melalui JavaScript.
+        <p>
+          Kami menyediakan berbagai produk kopi dan paket seduh
+          untuk menemani aktivitas sehari-hari.
         </p>
 
       </div>
 
-      <!-- Dynamic Product Container -->
-      <div id="produk-dynamic">
+      <div class="product-grid">
 
-        <div
-          id="produk-dinamis"
-          class="js-product-grid"
-        >
-        </div>
+        <article class="product-card">
+
+          <h3>Arabika Gayo</h3>
+
+          <p>
+            Kopi Arabika dengan karakter rasa khas dari Gayo.
+          </p>
+
+        </article>
+
+        <article class="product-card">
+
+          <h3>Robusta Temanggung</h3>
+
+          <p>
+            Kopi Robusta dengan cita rasa kuat dan aroma khas.
+          </p>
+
+        </article>
+
+        <article class="product-card">
+
+          <h3>Paket Seduh</h3>
+
+          <p>
+            Paket praktis untuk menikmati kopi di rumah.
+          </p>
+
+        </article>
+
+        <article class="product-card">
+
+          <h3>Drip Bag Nusantara</h3>
+
+          <p>
+            Kopi praktis dalam kemasan drip bag untuk diseduh kapan saja.
+          </p>
+
+        </article>
 
       </div>
 
     </section>
 
-    <!-- Product Table -->
-    <section class="section" aria-labelledby="daftar-produk">
+    <!-- P11: Dynamic Product Filter -->
+    <section
+      class="section"
+      aria-labelledby="produk-title"
+    >
+
       <div class="section-header">
 
-        <p class="eyebrow">Informasi Produk</p>
+        <p class="eyebrow">
+          P11 - DOM, Events, and Rendering
+        </p>
+
+        <h2 id="produk-title">
+          Katalog Produk Kopi Nusa
+        </h2>
+
+        <p
+          id="produk-status"
+          class="produk-status"
+          aria-live="polite"
+        >
+          Produk belum dimuat.
+        </p>
+
+      </div>
+
+      <!-- Category Filter Buttons -->
+      <div
+        class="filter-bar"
+        role="group"
+        aria-label="Filter kategori produk"
+      >
+
+        <button
+          type="button"
+          class="filter-button is-active"
+          data-filter="Semua"
+          aria-pressed="true"
+        >
+          Semua
+        </button>
+
+        <button
+          type="button"
+          class="filter-button"
+          data-filter="Kopi"
+          aria-pressed="false"
+        >
+          Kopi
+        </button>
+
+        <button
+          type="button"
+          class="filter-button"
+          data-filter="Bundling"
+          aria-pressed="false"
+        >
+          Bundling
+        </button>
+
+        <button
+          type="button"
+          class="filter-button"
+          data-filter="Aksesori"
+          aria-pressed="false"
+        >
+          Aksesori
+        </button>
+
+      </div>
+
+      <!-- Dynamic Product Grid -->
+      <div
+        id="produk-grid"
+        class="product-grid"
+        aria-live="polite"
+      ></div>
+
+    </section>
+
+    <!-- Product Table -->
+    <section
+      class="section"
+      aria-labelledby="daftar-produk"
+    >
+
+      <div class="section-header">
+
+        <p class="eyebrow">
+          Informasi Produk
+        </p>
 
         <h2 id="daftar-produk">
           Daftar Produk
@@ -158,6 +246,7 @@
       </div>
 
       <div class="table-wrapper">
+
         <table>
 
           <thead>
@@ -169,6 +258,7 @@
           </thead>
 
           <tbody>
+
             <tr>
               <td>1</td>
               <td>Arabika Gayo</td>
@@ -192,18 +282,26 @@
               <td>Drip Bag Nusantara</td>
               <td>Kopi</td>
             </tr>
+
           </tbody>
 
         </table>
+
       </div>
+
     </section>
 
     <!-- Contact Section -->
-    <section class="section" aria-labelledby="hubungi-kami">
+    <section
+      class="section"
+      aria-labelledby="hubungi-kami"
+    >
 
       <div class="section-header">
 
-        <p class="eyebrow">Informasi</p>
+        <p class="eyebrow">
+          Informasi
+        </p>
 
         <h2 id="hubungi-kami">
           Tertarik dengan Produk Kami?
@@ -229,6 +327,7 @@
 
   <!-- Footer -->
   <footer class="site-footer">
+
     <div class="container">
 
       <p>
@@ -236,6 +335,7 @@
       </p>
 
     </div>
+
   </footer>
 
   <!-- Existing JavaScript Files -->
